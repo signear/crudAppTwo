@@ -19,6 +19,7 @@ class CreateProjectsTable extends Migration
             $table->string('surname', 255)->nullable();
             $table->string('test', 255)->nullable();
             $table->string('test2', 255)->nullable();
+            $table->string('test3', 255)->nullable();
             $table->decimal('money', 22)->nullable()->default(0.00);
             $table->timestamps();
         });
