@@ -48,8 +48,7 @@ class ContactController extends Controller
 
         $rules = ['price' => 'regex:/^[0-9]+(\.[0-9][0-9]?)?$/'];
 
-        $validator =
-        Validator::make($request->all(), $rules);
+        $validator = Validator::make($request->all(), $rules);
 
         if($validator->fails()){
             return back()->withErrors("iki basamakli olacak");
