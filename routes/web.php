@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+//use App\Http\Controllers\ProjectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('contacts', 'ContactController');
+
+//Route::resource('projects', ProjectController::class);
+
+//Route::apiResource('contacts', 'ContactController');
